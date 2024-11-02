@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+	"module": "commonjs",
+	"target": "ES2021",
+	"sourceMap": true,
+	"outDir": "dist",
+	"rootDir": "src",
+	"experimentalDecorators": true,
+	"emitDecoratorMetadata": true,
+	"esModuleInterop": true,
+	"forceConsistentCasingInFileNames": true,
+	"strict": true,
+	"noImplicitAny": true,
+	"strictNullChecks": true,
+	"strictFunctionTypes": true,
+	"noImplicitThis": true,
+	"alwaysStrict": true,
+	"noFallthroughCasesInSwitch": true,
+	"skipLibCheck": true,
+	"strictPropertyInitialization": false,
+	"resolveJsonModule": true,
+	"declaration": true,
+	"removeComments": true,
+	"allowSyntheticDefaultImports": true,
+	"baseUrl": "./",
+	"strictBindCallApply": true,
+	"noImplicitOverride": true,
+	"noUncheckedIndexedAccess": true
+  }
+}

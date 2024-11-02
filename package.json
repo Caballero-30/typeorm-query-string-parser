@@ -1,0 +1,47 @@
+{
+  "name": "typeorm-query-string-parser",
+  "version": "1.0.0",
+  "description": "A library for converting URL query strings into TypeORM-compatible options for NestJS applications.",
+  "files": [
+    "dist/**/*"
+  ],
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typeorm",
+    "repository",
+    "query",
+    "param",
+    "parser",
+    "options"
+  ],
+  "author": {
+    "name": "Caballero-30"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caballero-30/typeorm-query-string-parser.git"
+  },
+  "homepage": "https://github.com/Caballero-30/typeorm-query-string-parser#readme",
+  "license": "ISC",
+  "dependencies": {
+    "@frontalnh/json-dot-parser": "^0.1.7",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^10.4.6",
+    "@nestjs/swagger": "^8.0.1",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.4.5",
+    "@nestjs/swagger": "^7.4.2",
+    "typeorm": "^0.3.20"
+  }
+}
