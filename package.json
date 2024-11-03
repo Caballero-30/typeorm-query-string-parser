@@ -1,6 +1,6 @@
 {
   "name": "typeorm-query-string-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library for converting URL query strings into TypeORM-compatible options for NestJS applications.",
   "files": [
     "dist/**/*"

@@ -18,10 +18,11 @@ In the service, you can utilise the `PageOptionsDto` to handle query options wit
 import { Injectable } from '@nestjs/common'
 import { PageOptionsDto, PageMetaDto, PageDto } from 'typeorm-query-string-parser'
 import { Entity } from './entity.entity'
+import { EntityRepository } from './entity.repository'
 
 @Injectable()
 export class EntityService {
-  constructor(private entityRepository: Repository<Entity>) {}
+  constructor(private entityRepository: EntityRepository<Entity>) {}
 
   async getPaginated(options: PageOptionsDto<Entity>) {
     const [items, count] = await this.entityRepository.findAndCount(options.toRepositoryOptions())
