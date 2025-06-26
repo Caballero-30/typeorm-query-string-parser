@@ -10,7 +10,7 @@ import { extractEntities } from '../utils/extract-entites'
 
 /** Page options data transfer object. It contains the pagination, sorting, and filtering options */
 export class PageOptionsDto<TEntity> {
-  private static readonly WHERE_PATTERN = `^([a-zA-Z0-9_,.]+:${Object.values(FilterRule).join('|')}:[^|]+)(\\|([a-zA-Z0-9_,.]+:${Object.values(FilterRule).join('|')}:[^|]+))*$`
+  private static readonly WHERE_PATTERN = `^([a-zA-Z0-9_,.]+:(?:${Object.values(FilterRule).join('|')}):[^|]+)(\\|([a-zA-Z0-9_,.]+:(?:${Object.values(FilterRule).join('|')}):[^|]+))*$`
   private static readonly SORT_PATTERN = '^([a-zA-Z0-9_,.]+:(ASC|DESC|asc|desc))(,([a-zA-Z0-9_,.]+:(ASC|DESC|asc|desc)))*$'
 
   /**
