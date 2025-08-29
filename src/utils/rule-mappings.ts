@@ -4,6 +4,7 @@ import {
   Between,
   Equal,
   FindOperator,
+  ILike,
   In,
   IsNull,
   JsonContains,
@@ -78,12 +79,12 @@ export const ruleMappings: Record<FilterRule, (prop: string, value: string) => R
   },
   [FilterRule.ILIKE]: (prop, value) => {
     return {
-      [prop]: Like(`%${value}%`)
+      [prop]: ILike(`%${value}%`)
     }
   },
   [FilterRule.NOT_ILIKE]: (prop, value) => {
     return {
-      [prop]: Not(Like(`%${value}%`))
+      [prop]: Not(ILike(`%${value}%`))
     }
   },
   [FilterRule.BETWEEN]: (prop, value) => {
